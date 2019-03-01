@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Huang Qiu | Week 6 Homework</title>
-		<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+		<script type="text/javascript" src="d3.js"></script>
 		<style type="text/css">
-			#Title{
+		#Title{
                 font-family:helvetica;
                 font-size:18px;
                 color:#000000;
-            }
+                }
 		</style>
 	</head>
 
@@ -18,15 +18,7 @@
         <div id="Title">Test of Formatted Axis Values</div>
         <div id="commuting"></div>
         
-		<script type="text/javascript">
-
-    /*
-    THE OLD VERSION I USED IN CLASS
-          d3.csv("inClassSurveyData.csv",function(data){
-              drawCommute(data)
-          })*/
-    
-
+	<script type="text/javascript">
 
     //THE NEW SYNTAX THAT IS REQUIRED
     d3.csv("inClassSurveyData.csv")
@@ -95,15 +87,6 @@
                .attr("class","axis")
                .attr("transform", "translate(" +padding+ ",0)")
                .call(yAxis)
-        //for HW:
-        //add another scale to a different dimension such as r, or color, opacity.
-        //please add a axis to it after you read chapter 8.
-        
-        //IF YOU NEED A HINT:  
-		//Create X axis - you need to defin the axes, append it to the svg.
-        //look at chapter 8, 02_axes_bottom.html
-        //to define an axis, you can refer to code in that file starting at line 39
-        //to append it to the svg, you can refer to code starting at line 82
         
     }
        
